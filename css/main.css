@@ -200,12 +200,6 @@ aside .map {
     MOBILE: Menu
    ============== */
 
-nav {
-    position: absolute;
-    top: 0;
-}
-
-
 
 nav ul {
     margin: 0;
@@ -222,21 +216,8 @@ nav a {
     font-weight: bold;
 
     color: #73888F;
-    border-top: 2px solid #B7C5AC;
-
 }
 
-nav a.book-online {
-    background: #84978F;
-    color: #eee;
-    border-top-color: #84978F;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-}
-
-nav a.book-online:hover, nav a.book-online:visited {
-    color: #fff;
-}
 
 
 nav a:hover,
@@ -259,6 +240,7 @@ nav a:hover {
 h1, h2, h3, h4, h5 {
     font-family: 'Gentium Book Basic', serif;
     font-style: italic;
+    line-height: 1em;
 }
 
 
@@ -289,10 +271,6 @@ section.intro {
     font-size: 1.3em;
     line-height: 1.6em;
     color: #84978F;
-}
-
-.main aside {
-    padding: 0px 5% 10px;
 }
 
 .small {
@@ -326,6 +304,36 @@ section.intro {
    Media Queries
    ========================================================================== */
 
+
+@media only screen and (min-width: 320px) {
+
+    .header-container {
+        height: auto;
+    }
+
+    header {
+        background: url(../img/rjn-med.png) no-repeat 50% 10px;
+    }
+    nav {
+        position: relative;
+        margin-top: 50px;
+    }
+
+    nav a {
+        border: none;
+    }
+
+    nav a.book-online {
+        background: none;
+        color: #73888F;
+    }
+
+    .main aside {
+        padding: 0;
+    }
+}
+
+
 @media only screen and (min-width: 480px) {
 
 /* ====================
@@ -340,8 +348,11 @@ section.intro {
     }
 
     nav {
-        right: 5%;
-        width: 28em;
+        position: absolute;
+        top: 0;
+        right: 10px;
+        width: 20em;
+        margin-top: 0px
     }
 
     nav a {
@@ -350,6 +361,20 @@ section.intro {
         margin: 0 1;
         padding: 5px 2%;
         margin-bottom: 0;
+        border-top: 2px solid #B7C5AC;
+    }
+
+
+    nav a.book-online {
+        background: #84978F;
+        color: #eee;
+        border-top-color: #84978F;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    nav a.book-online:hover, nav a.book-online:visited {
+        color: #fff;
     }
 
     nav li:first-child a {
@@ -358,6 +383,10 @@ section.intro {
 
     nav li:last-child a {
         margin-right: 0;
+    }
+
+    .main aside {
+        padding: 0px 5% 10px;
     }
 
 /* ========================
@@ -402,7 +431,7 @@ section.intro {
     }
 
     nav {
-        width: 32em;
+        width: 25em;
         right: 48px;
     }
 
@@ -475,7 +504,7 @@ section.intro {
     }
 
     nav {
-        right: 110px;
+        right: 125px;
     }
 
     aside h2 {
