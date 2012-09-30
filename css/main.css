@@ -114,7 +114,6 @@ body {
 }
 
 header {
-    background: url(../img/rjn.png) no-repeat 0 65%;
     height: 100%;
     position: relative;
 }
@@ -122,18 +121,12 @@ header {
 header h1 {
     overflow: hidden;
     width: 0;
+    height: 0;
 }
 
 header .main-image-container {
-
     float: right;
-    height: 220px;
-    width: 220px;
-    border-radius: 120px;
-    border: 10px solid #fef2e2;
     background-color: #D1D6BB;
-    margin-top: 85px;
-    margin-right: 90px;
     opacity: 0.7;
     overflow: hidden;
     position: relative;
@@ -203,14 +196,16 @@ aside .map {
 }
 
 
-
-.title {
-    color: white;
-}
-
 /* ==============
     MOBILE: Menu
    ============== */
+
+nav {
+    position: absolute;
+    top: 0;
+}
+
+
 
 nav ul {
     margin: 0;
@@ -337,9 +332,22 @@ section.intro {
     INTERMEDIATE: Menu
    ==================== */
 
+    .header-container {
+        height: 100px;
+    }
+    header {
+        background: url(../img/rjn-med.png) no-repeat 10px 85%;
+    }
+
+    nav {
+        right: 5%;
+        width: 28em;
+    }
+
     nav a {
+        font-size: 0.8em;
         display: inline-block;
-        margin: 0 1.7%;
+        margin: 0 1;
         padding: 5px 2%;
         margin-bottom: 0;
     }
@@ -376,15 +384,34 @@ section.intro {
     WIDE: Menu
    ============ */
 
-    .title {
-        float: left;
+    .header-container {
+        height: 140px;
+    }
+    header {
+        background: url(../img/rjn-med.png) no-repeat 0 65%;
+    }
+
+
+    header .main-image-container {
+        height: 140px;
+        width: 140px;
+        border: 5px solid #fef2e2;
+        border-radius: 75px;
+        margin-top: 15px;
+        margin-right: 60px;
     }
 
     nav {
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 40em;
+        width: 32em;
+        right: 48px;
+    }
+
+    nav a {
+        font-size: 1em;
+    }
+
+    aside h2 {
+        font-size: 1.6em;
     }
 
 /* ============
@@ -402,6 +429,36 @@ section.intro {
     }
 }
 
+@media only screen and (min-width: 1024px) {
+
+    .header-container {
+        height: 200px;
+    }
+
+    header {
+        background: url(../img/rjn.png) no-repeat 0 65%;
+    }
+
+    header .main-image-container {
+        height: 220px;
+        width: 220px;
+        border-radius: 120px;
+        border: 10px solid #fef2e2;
+        margin-top: 40px;
+        margin-right: 60px;
+    }
+
+    nav {
+        right: 90px;
+    }
+
+    aside h2 {
+        font-size: 2.2em;
+    }
+
+}
+
+
 @media only screen and (min-width: 1140px) {
 
 /* ===============
@@ -412,6 +469,20 @@ section.intro {
         width: 1026px; /* 1140px - 10% for margins */
         margin: 0 auto;
     }
+
+    header .main-image-container {
+        margin-right: 80px;
+    }
+
+    nav {
+        right: 110px;
+    }
+
+    aside h2 {
+        font-size: 2.6em;
+    }
+
+
 }
 
 /* ==========================================================================
