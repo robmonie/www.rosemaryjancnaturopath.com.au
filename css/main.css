@@ -29,12 +29,12 @@ a:hover {
 }
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: #FEF2E2;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: #FEF2E2;
     text-shadow: none;
 }
 
@@ -148,21 +148,28 @@ header .image.transparent {
 }
 
 .image-1 {
-    background-image: url(../img/entrance.jpg);
-}
-
-.image-2 {
     background-image: url(../img/entrance_2.jpg);
 }
 
+.image-2 {
+    background-image: url(../img/entrance.jpg);
+}
+
 .image-3 {
-    background-image: url(../img/autumn_in_daylesford.jpg);
+    background-image: url(../img/hawthorn.jpg);
 }
 
 .image-4 {
-    background-image: url(../img/clinic_room_web_1.jpg);
+    background-image: url(../img/ladies_mantle.jpg);
 }
 
+.image-5 {
+   background-image: url(../img/clinic_room_web_1.jpg);
+}
+
+.image-6 {
+    background-image: url(../img/autumn_in_daylesford.jpg);
+}
 
 .main aside {
     margin-top: 1em;
@@ -269,6 +276,16 @@ section.intro {
     color: #84978F;
 }
 
+section.intro img {
+    float: left;
+    margin-right: 1em;
+
+    border: 4px solid #e1e6cb;
+    -webkit-box-shadow: 0 2px 5px #bbb;
+       -moz-box-shadow: 0 2px 5px #bbb;
+            box-shadow: 0 2px 5px #bbb;
+}
+
 .small {
     font-size: 0.7em;
 }
@@ -347,7 +364,7 @@ section.intro {
         position: absolute;
         top: 0;
         right: 10px;
-        width: 20em;
+        width: 22em;
         margin-top: 0px
     }
 
@@ -429,7 +446,7 @@ section.intro {
     }
 
     nav {
-        width: 25em;
+        width: 26em;
         right: 48px;
     }
 
