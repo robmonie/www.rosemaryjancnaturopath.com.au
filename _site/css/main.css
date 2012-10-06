@@ -29,12 +29,12 @@ a:hover {
 }
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: #FEF2E2;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: #FEF2E2;
     text-shadow: none;
 }
 
@@ -148,21 +148,28 @@ header .image.transparent {
 }
 
 .image-1 {
-    background-image: url(../img/entrance.jpg);
-}
-
-.image-2 {
     background-image: url(../img/entrance_2.jpg);
 }
 
+.image-2 {
+    background-image: url(../img/entrance.jpg);
+}
+
 .image-3 {
-    background-image: url(../img/autumn_in_daylesford.jpg);
+    background-image: url(../img/hawthorn.jpg);
 }
 
 .image-4 {
-    background-image: url(../img/clinic_room_web_1.jpg);
+    background-image: url(../img/ladies_mantle.jpg);
 }
 
+.image-5 {
+   background-image: url(../img/clinic_room_web_1.jpg);
+}
+.image-6 {
+    background-image: url(../img/autumn_in_daylesford.jpg);
+
+}
 
 .main aside {
     margin-top: 1em;
