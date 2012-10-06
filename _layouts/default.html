@@ -35,12 +35,16 @@
                 </div>
                 <nav>
                     <ul>
-                        {% for p in site.pages %}
-                            <li>
-                              <a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
-                                {{ p.nav_title }}
-                              </a>
-                            </li>
+                        {% for nav_index in (1..5) %}
+                          {% for p in site.pages %}
+                            {% if p.nav_index == nav_index %}
+                              <li>
+                                <a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
+                                  {{ p.nav_title }}
+                                </a>
+                              </li>
+                            {% endif %}
+                          {% endfor %}
                         {% endfor %}
                     </ul>
                 </nav>
