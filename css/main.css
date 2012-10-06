@@ -379,6 +379,10 @@ section.intro {
         padding: 0px 5% 10px;
     }
 
+    .lt-ie9 nav {
+        display: block;
+    }
+
 /* ========================
     INTERMEDIATE: IE Fixes
    ======================== */
@@ -432,6 +436,7 @@ section.intro {
     aside h2 {
         font-size: 1.6em;
     }
+
 
 /* ============
     WIDE: Main
@@ -564,6 +569,14 @@ section.intro {
 
 .clearfix {
     *zoom: 1;
+}
+
+.lt-ie9 aside {
+    margin-top: 6em;
+}
+
+.lt-ie9 nav {
+    display: none;
 }
 
 /* ==========================================================================
