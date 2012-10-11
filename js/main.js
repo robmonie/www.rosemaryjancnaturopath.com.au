@@ -1,4 +1,6 @@
-(function() {
+$(function() {
+
+  /** Global **/
 
   var images = $(".main-image-container .image");
 
@@ -13,7 +15,7 @@
           next = 0;
         }
         changeImage(next);
-      }, 10000);
+      }, 20000);
 
   };
 
@@ -29,4 +31,13 @@
     e.preventDefault();
   });
 
-})();
+  /**Booking **/
+  if($('body#booking').length) {
+    $('iframe').on('load', function() {
+      $(this).css({height: 1200});
+      $('.loading').hide();
+    });
+  }
+
+
+});
